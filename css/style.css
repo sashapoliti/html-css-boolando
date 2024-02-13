@@ -7,6 +7,10 @@
 ul {
   list-style: none;
 }
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
 
 /* general */
 :root {
@@ -20,6 +24,37 @@ ul {
 }
 body {
     font-family: "Poppins", sans-serif;
+    font-weight: 600;
   background-color: var(--color-white);
   color: var(--color-black);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* header */
+header {
+    background-color: var(--color-orange);
+    padding: 20px 0;
+}
+#logo {
+    width: 100%;
+    height: 30px;
+}
+
+/* padding utility */
+.paddleftright-10 {
+    padding: 0 10px;
+}
+
+/* flex utility */
+.d-flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
 }
