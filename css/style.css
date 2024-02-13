@@ -73,10 +73,66 @@ main {
 .card-image:hover .secondary-image {
     display: block;
 }
+.badge {
+    color: var(--color-white);
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+.badge .discount {
+    display: inline-block;
+    background-color: var(--color-discount);
+}
+.badge .vegan {
+    display: inline-block;
+    background-color: var(--color-vegan);    
+}
+.heart {
+    background-color: var(--color-white);
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.black-heart {
+    display: block;
+}
+.red-heart {
+    display: none;
+}
+.heart:hover .black-heart {
+    display: none;
+}
+.heart:hover .red-heart {
+    display: block;
+}
+
+/* text utility */
+.text-red {
+    color: var(--color-discount);
+}
+.fontweight-400 {
+    font-weight: 400;
+}
+.fontweight-800 {
+    font-weight: 800;
+}
+.linethrought {
+    text-decoration: line-through;
+}
+.line-height {
+    line-height: 20px;
+}
+.fontsize-12 {
+    font-size: 12px;
+}
 
 /* padding utility */
 .paddleftright-10 {
     padding: 0 10px;
+}
+.padding-badge {
+    padding: 5px 10px;
 }
 
 /* flex utility */
