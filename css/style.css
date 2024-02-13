@@ -8,170 +8,174 @@ ul {
   list-style: none;
 }
 a {
-    text-decoration: none;
-    color: var(--color-white);
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 /* general */
 :root {
-	--color-orange: #ff6900;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-	--color-not-black: #1a1a1a;
-	--color-discount: #fd0101;
-	--color-vegan: #018004;
+  --color-orange: #ff6900;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-not-black: #1a1a1a;
+  --color-discount: #fd0101;
+  --color-vegan: #018004;
 }
 body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   background-color: var(--color-white);
   color: var(--color-black);
 }
 .container {
-    max-width: 1400px;
-    margin: auto;
-    gap: 15px;
+  max-width: 1400px;
+  margin: auto;
+  gap: 15px;
 }
 .underline:hover {
-    text-decoration: underline;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+  text-decoration: underline;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 /* header */
 header {
-    background-color: var(--color-orange);
-    padding: 20px 0;
+  background-color: var(--color-orange);
+  padding: 20px 0;
+  box-shadow: 0px -3px 15px 0px #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 #logo {
-    width: 100%;
-    height: 30px;
+  width: 100%;
+  height: 30px;
 }
 
 /* main */
 main {
-    padding: 50px 0;
+  padding: 130px 0 50px 0;
 }
-.card {    
-    width: calc(100% / 3 - 15px);
-    margin-bottom: 30px;
+.card {
+  width: calc(100% / 3 - 15px);
+  margin-bottom: 30px;
 }
 .card-image {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
-.card-image>img {
-    width: 100%;
+.card-image > img {
+  width: 100%;
 }
 .main-image {
-    display: block;
+  display: block;
 }
 .secondary-image {
-    display: none;
+  display: none;
 }
 .card-image:hover .main-image {
-    display: none;
+  display: none;
 }
 .card-image:hover .secondary-image {
-    display: block;
+  display: block;
 }
 .badge {
-    color: var(--color-white);
-    position: absolute;
-    bottom: 40px;
-    left: 0;
+  color: var(--color-white);
+  position: absolute;
+  bottom: 40px;
+  left: 0;
 }
 .badge .discount {
-    display: inline-block;
-    background-color: var(--color-discount);
+  display: inline-block;
+  background-color: var(--color-discount);
 }
 .badge .vegan {
-    display: inline-block;
-    background-color: var(--color-vegan);    
+  display: inline-block;
+  background-color: var(--color-vegan);
 }
 .heart {
-    background-color: var(--color-white);
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    right: 0;
+  background-color: var(--color-white);
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
 .black-heart {
-    display: block;
+  display: block;
 }
 .red-heart {
-    display: none;
+  display: none;
 }
 .heart:hover .black-heart {
-    display: none;
+  display: none;
 }
 .heart:hover .red-heart {
-    display: block;
+  display: block;
 }
 
 /* footer */
 footer {
-    background-color: var(--color-not-black);
-    color: var(--color-white);
-    padding: 30px 0;
+  background-color: var(--color-not-black);
+  color: var(--color-white);
+  padding: 30px 0;
 }
 
 /* text utility */
 .text-red {
-    color: var(--color-discount);
+  color: var(--color-discount);
 }
 .fontweight-400 {
-    font-weight: 400;
+  font-weight: 400;
 }
 .fontweight-800 {
-    font-weight: 800;
+  font-weight: 800;
 }
 .linethrought {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 .line-height {
-    line-height: 20px;
+  line-height: 20px;
 }
 .fontsize-24 {
-    font-size: 20px;
+  font-size: 20px;
 }
 .fontsize-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 /* padding utility */
 .paddleftright-10 {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 .paddleftright-5 {
-    padding: 0 5px;
+  padding: 0 5px;
 }
 .padding-badge {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 /* flex utility */
 .d-flex {
-    display: flex;
+  display: flex;
 }
 .flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 .space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 .align-between {
-    align-content: space-between;
+  align-content: space-between;
 }
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 .align-baseline {
-    align-items: baseline;
+  align-items: baseline;
 }
