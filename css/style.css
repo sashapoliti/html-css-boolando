@@ -1,0 +1,25 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+/* general */
+:root {
+	--color-orange: #ff6900;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-bgcards: #E4E4E4;
+	--color-not-black: #1a1a1a;
+	--color-discount: #fd0101;
+	--color-vegan: #018004;
+}
+body {
+    font-family: "Poppins", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
