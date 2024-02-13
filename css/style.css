@@ -30,6 +30,7 @@ body {
 .container {
     max-width: 1200px;
     margin: auto;
+    gap: 20px;
 }
 .underline:hover {
     text-decoration: underline;
@@ -52,7 +53,7 @@ main {
     padding: 50px 0;
 }
 .card {    
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 20px);
 }
 .card-image {
     position: relative;
